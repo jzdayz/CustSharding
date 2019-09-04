@@ -1,3 +1,10 @@
+# Fork 自 [apache shardingsphere](https://github.com/apache/incubator-shardingsphere)
+
+做了些许更改
+
+
+
+
 # [ShardingSphere - Distributed Database Middleware Ecosphere](https://shardingsphere.apache.org/)
 
 **Official website: https://shardingsphere.apache.org/**
