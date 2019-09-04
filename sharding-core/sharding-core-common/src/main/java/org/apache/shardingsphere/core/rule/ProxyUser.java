@@ -34,4 +34,6 @@ public final class ProxyUser {
     private final String password;
     
     private final Collection<String> authorizedSchemas;
+
+    private final String visitSchema;
 }

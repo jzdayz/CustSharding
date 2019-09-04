@@ -33,4 +33,6 @@ public final class YamlProxyUserConfiguration implements YamlConfiguration {
     private String password;
     
     private String authorizedSchemas;
+
+    private String visitSchema;
 }

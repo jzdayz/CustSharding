@@ -19,6 +19,7 @@ package org.apache.shardingsphere.shardingproxy.context;
 
 import com.google.common.eventbus.Subscribe;
 import lombok.Getter;
+import org.apache.shardingsphere.api.context.Context;
 import org.apache.shardingsphere.core.constant.properties.ShardingProperties;
 import org.apache.shardingsphere.core.rule.Authentication;
 import org.apache.shardingsphere.core.util.ConfigurationLogger;
@@ -27,7 +28,9 @@ import org.apache.shardingsphere.orchestration.internal.registry.config.event.Au
 import org.apache.shardingsphere.orchestration.internal.registry.config.event.PropertiesChangedEvent;
 import org.apache.shardingsphere.orchestration.internal.registry.state.event.CircuitStateChangedEvent;
 
+import java.util.Map;
 import java.util.Properties;
+import java.util.stream.Collectors;
 
 /**
  * Context of Sharding-Proxy.
@@ -70,6 +73,11 @@ public final class ShardingProxyContext {
     public void init(final Authentication authentication, final Properties props) {
         this.authentication = authentication;
         shardingProperties = new ShardingProperties(props);
+        Context.USER_SCHEMA.putAll(
+                authentication.getUsers().entrySet().stream().collect(
+                        Collectors.toMap(Map.Entry::getKey, v->v.getValue().getVisitSchema())
+                )
+        );
     }
     
     /**

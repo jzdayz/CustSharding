@@ -18,7 +18,7 @@
 package org.apache.shardingsphere.core.route.router.sharding;
 
 import lombok.RequiredArgsConstructor;
-import org.apache.shardingsphere.api.context.ThreadLocalContext;
+import org.apache.shardingsphere.api.context.Context;
 import org.apache.shardingsphere.core.optimize.transparent.statement.TransparentOptimizedStatement;
 import org.apache.shardingsphere.core.parse.core.SQLParseKernel;
 import org.apache.shardingsphere.core.parse.core.rule.registry.ParseRuleRegistry;
@@ -35,6 +35,7 @@ import org.apache.shardingsphere.spi.database.DatabaseType;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -66,12 +67,44 @@ public final class DatabaseHintSQLRouter implements ShardingRouter {
     @Override
     public SQLRouteResult route(final String logicSQL, final List<Object> parameters, final SQLStatement sqlStatement) {
 
-        ThreadLocalContext.User user = (ThreadLocalContext.User) ThreadLocalContext.CONNECTION.get();
-        if (user != ThreadLocalContext.NULL){
-            String userName = user.getUserName();
-            System.err.println(userName);
+        Context.User user = Context.CONNECTION.get();
+        if (user != Context.NULL && !Objects.equals(user.getUserName(),"root")){
+            return doUserRoute(sqlStatement,user);
+        }
+        // root 走表名路由
+        return doTableRoute(sqlStatement);
+    }
+
+    private SQLRouteResult doUserRoute(SQLStatement sqlStatement, Context.User user) {
+
+        String dataSourceName = Context.USER_SCHEMA.get(user.getUserName());
+
+        SQLRouteResult result = new SQLRouteResult(new TransparentOptimizedStatement(sqlStatement));
+
+        // 路由结果
+        RoutingResult routingResult = new RoutingResult();
+
+        // 路由的表和dataSourceName
+        Collection<RoutingUnit> routingUnits = routingResult.getRoutingUnits();
+
+        // 只路由到一个地方
+        RoutingUnit routingUnit = new RoutingUnit(dataSourceName);
+        routingUnits.add(routingUnit);
+
+        for (SQLSegment segment : sqlStatement.getAllSQLSegments()) {
+
+            if (segment instanceof TableSegment) {
+                String tableName = ((TableSegment) segment).getTableName();
+                routingUnit.getTableUnits().add(new TableUnit(tableName,tableName));
+            }
+
         }
 
+        result.setRoutingResult(routingResult);
+        return result;
+    }
+
+    private SQLRouteResult doTableRoute(SQLStatement sqlStatement) {
         SQLRouteResult result = new SQLRouteResult(new TransparentOptimizedStatement(sqlStatement));
 
         // 路由结果
@@ -114,7 +147,6 @@ public final class DatabaseHintSQLRouter implements ShardingRouter {
         if(allowDelete) {
             routingResult.getRoutingUnits().removeIf(unit -> unit.getTableUnits().size() == 0);
         }
-
         return result;
     }
 

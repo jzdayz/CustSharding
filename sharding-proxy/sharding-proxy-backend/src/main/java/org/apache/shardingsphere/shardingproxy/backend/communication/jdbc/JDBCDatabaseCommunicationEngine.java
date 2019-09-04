@@ -18,7 +18,7 @@
 package org.apache.shardingsphere.shardingproxy.backend.communication.jdbc;
 
 import lombok.RequiredArgsConstructor;
-import org.apache.shardingsphere.api.context.ThreadLocalContext;
+import org.apache.shardingsphere.api.context.Context;
 import org.apache.shardingsphere.core.merge.MergeEngineFactory;
 import org.apache.shardingsphere.core.merge.MergedResult;
 import org.apache.shardingsphere.core.merge.dal.show.ShowTablesMergedResult;
@@ -79,12 +79,12 @@ public final class JDBCDatabaseCommunicationEngine implements DatabaseCommunicat
     public BackendResponse execute() {
         try {
             BackendConnection backendConnection = executeEngine.getBackendConnection();
-            ThreadLocalContext.CONNECTION.set(new ThreadLocalContext.User(
+            Context.CONNECTION.set(new Context.User(
                         backendConnection.getUserName()
                     )
             );
             SQLRouteResult routeResult = executeEngine.getJdbcExecutorWrapper().route(sql, databaseType);
-            ThreadLocalContext.CONNECTION.remove();
+            Context.CONNECTION.remove();
             return execute(routeResult);
         } catch (final SQLException ex) {
             return new ErrorResponse(ex);
