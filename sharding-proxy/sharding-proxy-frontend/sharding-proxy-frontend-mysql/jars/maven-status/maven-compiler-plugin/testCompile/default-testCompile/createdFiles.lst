@@ -1,0 +1,3 @@
+org/apache/shardingsphere/shardingproxy/frontend/mysql/MySQLFrontendEngineTest.class
+org/apache/shardingsphere/shardingproxy/frontend/mysql/MySQLErrPacketFactoryTest.class
+org/apache/shardingsphere/shardingproxy/frontend/mysql/command/query/binary/reset/MySQLComStmtResetExecutorTest.class

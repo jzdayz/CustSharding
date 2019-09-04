@@ -1,0 +1,4 @@
+org/apache/shardingsphere/shardingproxy/error/CommonErrorCodeTest.class
+org/apache/shardingsphere/shardingproxy/util/DataSourceConverterTest.class
+org/apache/shardingsphere/shardingproxy/config/ShardingConfigurationLoaderTest.class
+org/apache/shardingsphere/shardingproxy/context/ShardingProxyContextTest.class

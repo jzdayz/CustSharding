@@ -1,0 +1,7 @@
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-sql-test/src/main/java/org/apache/shardingsphere/test/sql/SQLCases.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-sql-test/src/main/java/org/apache/shardingsphere/test/sql/SQLCase.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-sql-test/src/main/java/org/apache/shardingsphere/test/sql/loader/sharding/ShardingSQLCasesRegistry.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-sql-test/src/main/java/org/apache/shardingsphere/test/sql/loader/encrypt/EncryptSQLCasesRegistry.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-sql-test/src/main/java/org/apache/shardingsphere/test/sql/loader/sharding/ShardingUnsupportedSQLCasesRegistry.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-sql-test/src/main/java/org/apache/shardingsphere/test/sql/SQLCaseType.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-sql-test/src/main/java/org/apache/shardingsphere/test/sql/loader/SQLCasesLoader.java

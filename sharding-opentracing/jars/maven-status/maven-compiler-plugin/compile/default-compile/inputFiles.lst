@@ -1,0 +1,7 @@
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-opentracing/src/main/java/org/apache/shardingsphere/opentracing/hook/OpenTracingParsingHook.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-opentracing/src/main/java/org/apache/shardingsphere/opentracing/hook/ShardingErrorSpan.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-opentracing/src/main/java/org/apache/shardingsphere/opentracing/constant/ShardingTags.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-opentracing/src/main/java/org/apache/shardingsphere/opentracing/ShardingTracer.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-opentracing/src/main/java/org/apache/shardingsphere/opentracing/hook/OpenTracingSQLExecutionHook.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-opentracing/src/main/java/org/apache/shardingsphere/opentracing/hook/OpenTracingRootInvokeHook.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-opentracing/src/main/java/org/apache/shardingsphere/opentracing/constant/ShardingErrorLogTags.java

@@ -1,0 +1,4 @@
+org/apache/shardingsphere/core/PreparedQueryShardingEngineTest.class
+org/apache/shardingsphere/core/SimpleQueryShardingEngineTest.class
+org/apache/shardingsphere/core/fixture/RoutingHookFixture.class
+org/apache/shardingsphere/core/BaseShardingEngineTest.class

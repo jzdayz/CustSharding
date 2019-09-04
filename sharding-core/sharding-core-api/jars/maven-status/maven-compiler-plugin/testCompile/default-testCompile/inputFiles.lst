@@ -1,0 +1,9 @@
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-core/sharding-core-api/src/test/java/org/apache/shardingsphere/api/config/masterslave/MasterSlaveRuleConfigurationTest.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-core/sharding-core-api/src/test/java/org/apache/shardingsphere/api/config/sharding/strategy/InlineShardingStrategyConfigurationTest.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-core/sharding-core-api/src/test/java/org/apache/shardingsphere/api/config/sharding/strategy/ComplexShardingStrategyConfigurationTest.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-core/sharding-core-api/src/test/java/org/apache/shardingsphere/api/config/encrypt/EncryptorRuleConfigurationTest.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-core/sharding-core-api/src/test/java/org/apache/shardingsphere/api/config/sharding/TableRuleConfigurationTest.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-core/sharding-core-api/src/test/java/org/apache/shardingsphere/api/config/sharding/strategy/StandardShardingStrategyConfigurationTest.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-core/sharding-core-api/src/test/java/org/apache/shardingsphere/api/config/sharding/strategy/HintShardingStrategyConfigurationTest.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-core/sharding-core-api/src/test/java/org/apache/shardingsphere/api/hint/HintManagerTest.java
+/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-core/sharding-core-api/src/test/java/org/apache/shardingsphere/api/config/sharding/KeyGeneratorConfigurationTest.java
