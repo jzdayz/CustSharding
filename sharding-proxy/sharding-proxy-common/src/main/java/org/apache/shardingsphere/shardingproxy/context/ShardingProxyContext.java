@@ -73,10 +73,13 @@ public final class ShardingProxyContext {
     public void init(final Authentication authentication, final Properties props) {
         this.authentication = authentication;
         shardingProperties = new ShardingProperties(props);
+        System.out.println(authentication);
+        Map<String, String> userSchema = authentication.getUsers().entrySet().stream().collect(
+                Collectors.toMap(Map.Entry::getKey, v -> v.getValue().getVisitSchema())
+        );
+        System.out.println(userSchema);
         Context.USER_SCHEMA.putAll(
-                authentication.getUsers().entrySet().stream().collect(
-                        Collectors.toMap(Map.Entry::getKey, v->v.getValue().getVisitSchema())
-                )
+                userSchema
         );
     }
     

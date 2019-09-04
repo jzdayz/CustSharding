@@ -177,7 +177,7 @@ public class ConfigurationLoggerTest {
     
     private Authentication getAuthentication() {
         Authentication result = new Authentication();
-        result.getUsers().put("root", new ProxyUser("123456", Collections.singletonList("sharding_db")));
+//        result.getUsers().put("root", new ProxyUser("123456", Collections.singletonList("sharding_db")));
         return result;
     }
     
