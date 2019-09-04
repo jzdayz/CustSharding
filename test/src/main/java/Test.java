@@ -12,8 +12,6 @@ import java.util.Map;
  */
 public class Test {
 
-    private final static String SYMBOL = "ds_1FOR";
-
     public static void main(String[] args) {
         MysqlDataSource mysqlDataSource = new MysqlDataSource();
         mysqlDataSource.setUser("root");
