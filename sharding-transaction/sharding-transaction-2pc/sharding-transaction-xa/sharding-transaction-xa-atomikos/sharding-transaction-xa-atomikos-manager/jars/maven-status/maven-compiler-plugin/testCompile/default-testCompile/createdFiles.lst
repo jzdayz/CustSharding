@@ -1,3 +1,0 @@
-org/apache/shardingsphere/transaction/xa/atomikos/manager/fixture/ReflectiveUtil.class
-org/apache/shardingsphere/transaction/xa/atomikos/manager/AtomikosXARecoverableResourceTest.class
-org/apache/shardingsphere/transaction/xa/atomikos/manager/AtomikosTransactionManagerTest.class

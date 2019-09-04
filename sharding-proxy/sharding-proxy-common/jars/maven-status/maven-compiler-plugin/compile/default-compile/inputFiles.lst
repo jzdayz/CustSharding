@@ -1,9 +1,0 @@
-/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-proxy/sharding-proxy-common/src/main/java/org/apache/shardingsphere/shardingproxy/config/ShardingConfiguration.java
-/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-proxy/sharding-proxy-common/src/main/java/org/apache/shardingsphere/shardingproxy/config/yaml/YamlProxyServerConfiguration.java
-/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-proxy/sharding-proxy-common/src/main/java/org/apache/shardingsphere/shardingproxy/error/SQLErrorCode.java
-/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-proxy/sharding-proxy-common/src/main/java/org/apache/shardingsphere/shardingproxy/config/ShardingConfigurationLoader.java
-/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-proxy/sharding-proxy-common/src/main/java/org/apache/shardingsphere/shardingproxy/error/CommonErrorCode.java
-/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-proxy/sharding-proxy-common/src/main/java/org/apache/shardingsphere/shardingproxy/config/yaml/YamlDataSourceParameter.java
-/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-proxy/sharding-proxy-common/src/main/java/org/apache/shardingsphere/shardingproxy/config/yaml/YamlProxyRuleConfiguration.java
-/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-proxy/sharding-proxy-common/src/main/java/org/apache/shardingsphere/shardingproxy/context/ShardingProxyContext.java
-/Users/huqingfeng/Downloads/apache-shardingsphere-incubating-4.0.0-RC2-src-release/sharding-proxy/sharding-proxy-common/src/main/java/org/apache/shardingsphere/shardingproxy/util/DataSourceConverter.java

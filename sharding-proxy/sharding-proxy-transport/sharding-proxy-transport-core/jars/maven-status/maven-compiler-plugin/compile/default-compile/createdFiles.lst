@@ -1,6 +1,0 @@
-org/apache/shardingsphere/shardingproxy/transport/codec/DatabasePacketCodecEngine.class
-org/apache/shardingsphere/shardingproxy/transport/packet/CommandPacket.class
-org/apache/shardingsphere/shardingproxy/transport/packet/DatabasePacket.class
-org/apache/shardingsphere/shardingproxy/transport/codec/PacketCodec.class
-org/apache/shardingsphere/shardingproxy/transport/packet/CommandPacketType.class
-org/apache/shardingsphere/shardingproxy/transport/payload/PacketPayload.class

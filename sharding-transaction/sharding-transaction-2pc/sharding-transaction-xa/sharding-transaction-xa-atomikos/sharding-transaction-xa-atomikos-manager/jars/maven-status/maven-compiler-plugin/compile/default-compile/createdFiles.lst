@@ -1,2 +1,0 @@
-org/apache/shardingsphere/transaction/xa/atomikos/manager/AtomikosTransactionManager.class
-org/apache/shardingsphere/transaction/xa/atomikos/manager/AtomikosXARecoverableResource.class
