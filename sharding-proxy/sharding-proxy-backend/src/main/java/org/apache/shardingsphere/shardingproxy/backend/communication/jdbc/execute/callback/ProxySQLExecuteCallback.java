@@ -78,7 +78,10 @@ public final class ProxySQLExecuteCallback extends SQLExecuteCallback<ExecuteRes
         }
         return executeSQL(statement, routeUnit.getSqlUnit().getSql(), connectionMode, withMetaData);
     }
-    
+
+    /**
+     *  通过jdbc执行sql 返回结果
+     */
     private ExecuteResponse executeSQL(final Statement statement, final String sql, final ConnectionMode connectionMode, final boolean withMetadata) throws SQLException {
         backendConnection.add(statement);
         if (jdbcExecutorWrapper.executeSQL(statement, sql, isReturnGeneratedKeys)) {

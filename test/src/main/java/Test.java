@@ -20,7 +20,7 @@ public class Test {
                 "serverTimezone=UTC&useSSL=false");
         JdbcTemplate jdbcTemplate = new JdbcTemplate(mysqlDataSource);
         List<Map<String, Object>> query = jdbcTemplate.query(
-                "show databases", new ColumnMapRowMapper());
+                "select * from a", new ColumnMapRowMapper());
         System.out.println(query);
 
     }
